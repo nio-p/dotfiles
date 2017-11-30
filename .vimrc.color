@@ -1,0 +1,10 @@
+set t_Co=256
+
+syntax enable
+syntax on
+
+"colorscheme molokai
+colorscheme hybrid
+
+highlight LineNr guifg=#FF0000
+highlight LineNr ctermfg=red

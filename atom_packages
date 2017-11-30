@@ -1,0 +1,19 @@
+# Community Package
+goto-definition
+Sublime-Style-Column-Selection
+atom-autocomplete-php
+atom-runner
+color-picker
+file-icons
+highlight-selected
+japanese-menu
+laguage-kotlin
+platformio-ide-terminal
+script
+emmet
+minimap
+remote-edit
+
+# Core Package
+# 勝手にインストールされるはず
+# とりあえずlanguage-hogehoge系が色々インストールされていればOK

@@ -1,0 +1,79 @@
+filetype plugin on
+filetype indent on
+
+set encoding=utf8
+set number
+set expandtab
+set ts=2
+set shiftwidth=2
+set autoindent
+set smartindent
+set ruler
+set showcmd
+set nowrap
+set title
+set backspace=indent,eol,start
+
+" jsonを勝手に良い感じにしてくれるのを防ぐ
+let g:vim_json_syntax_conceal = 0
+
+" コメントアウトの処理を修正
+set formatoptions+=mM
+augroup LineBreak
+  autocmd! LineBreak
+  autocmd FileType * setlocal formatoptions-=ro
+augroup END
+
+" 音を消す
+set visualbell t_vb=
+
+" カーソルがどの行のどの列にいるのかを分かりやすく
+set cursorline
+set cursorcolumn
+"highlight CursorLine ctermbg=red
+"highlight CursorColumn ctermbg=red
+
+nmap <silent> <Esc><Esc> :nohlsearch<CR>
+
+" インサートモードの時の処理
+inoremap <C-e> <END>
+inoremap <C-a> <HOME>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+inoremap jj <Esc>
+
+" {とか打ったら、その対になる文字を出力して、カーソルを左へずらす
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+
+" 検索
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
+nnoremap <Esc><Esc> :nohlsearch<CR>
+
+" 全角スペース等を強調表示
+if has("syntax")
+  function! ActivateInvisibleIndicator()
+    syntax match InvisibleJISX0208Space "　" display containedin=ALL
+    highlight InvisibleJISX0208Space term=underline ctermbg=darkgrey guibg=Blue
+    syntax match InvisibleTrailedSpace "[ \t]\+$" display containedin=ALL
+    highlight InvisibleTrailedSpace term=underline ctermbg=Red guibg=Red
+  endf
+  augroup invisible
+    autocmd! invisible
+    autocmd BufNew,BufRead * call ActivateInvisibleIndicator()
+  augroup END
+endif

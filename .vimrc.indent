@@ -1,0 +1,31 @@
+augroup TabSize
+  autocmd! TabSize
+  autocmd FileType c          setlocal ts=4 sw=4 sts=4
+  autocmd FileType cpp        setlocal ts=4 sw=4 sts=4
+  autocmd FileType cs         setlocal ts=4 sw=4 sts=4
+  autocmd FileType java       setlocal ts=4 sw=4 sts=4
+
+  autocmd FileType html       setlocal ts=2 sw=2 sts=2
+  autocmd FileType css        setlocal ts=2 sw=2 sts=2
+  autocmd FileType javascript setlocal ts=2 sw=2 sts=2
+
+  autocmd FileType sh         setlocal ts=2 sw=2 sts=2
+  autocmd FileType perl       setlocal ts=2 sw=2 sts=2
+  autocmd FileType php        setlocal ts=2 sw=2 sts=2
+  autocmd FileType ruby       setlocal ts=2 sw=2 sts=2
+  autocmd FileType python     setlocal ts=4 sw=4 sts=4
+
+  autocmd FileType sql        setlocal ts=4 sw=4 sts=4
+
+  autocmd FileType json       setlocal ts=4 sw=4 sts=4
+  autocmd FileType xml        setlocal ts=4 sw=4 sts=4
+  autocmd FileType conf       setlocal ts=4 sw=4 sts=4
+augroup END
+
+autocmd BufNewFile,BufRead *.psgi set filetype=perl
+autocmd BufNewFile,BufRead *.t set filetype=perl
+
+autocmd BufNewFile,BufRead *.tx set filetype=html
+autocmd BufNewFile,BufRead *.ep set filetype=html
+
+autocmd BufNewFile,BufRead *.tt set filetype=cs
