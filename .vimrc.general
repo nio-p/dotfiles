@@ -13,6 +13,7 @@ set showcmd
 set nowrap
 set title
 set backspace=indent,eol,start
+set synmaxcol=300
 
 " jsonを勝手に良い感じにしてくれるのを防ぐ
 let g:vim_json_syntax_conceal = 0
@@ -28,10 +29,11 @@ augroup END
 set visualbell t_vb=
 
 " カーソルがどの行のどの列にいるのかを分かりやすく
-set cursorline
-set cursorcolumn
-"highlight CursorLine ctermbg=red
-"highlight CursorColumn ctermbg=red
+" やっぱり重くなるし止めた...
+" set cursorline
+" set cursorcolumn
+" highlight CursorLine ctermbg=red
+" highlight CursorColumn ctermbg=red
 
 nmap <silent> <Esc><Esc> :nohlsearch<CR>
 
