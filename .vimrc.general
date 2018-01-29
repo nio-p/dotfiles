@@ -35,7 +35,7 @@ set visualbell t_vb=
 " highlight CursorLine ctermbg=red
 " highlight CursorColumn ctermbg=red
 
-nmap <silent> <Esc><Esc> :nohlsearch<CR>
+nmap <silent> <Esc><Esc> <C-[> :nohlsearch<CR>
 
 " インサートモードの時の処理
 inoremap <C-e> <END>
