@@ -7,10 +7,13 @@ yum install -y tig
 yum install -y make
 yum install -y patch
 yum install -y libxml2-devel
+yum install -y libmcrypt-devel
 yum install -y openssl-devel
 yum install -y readline-devel
 yum install -y zlib-devel
+yum install -y bzip2-devel
 yum install -y libcurl-devel
+
 
 # rbenv
 # ~/.rbenv, /usr/local/bin以下好きな場所に...
