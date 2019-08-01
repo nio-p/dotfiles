@@ -6,7 +6,8 @@
 
 ```
 $ git clone this repository
-$ sh setup.sh
+$ cd dotfiles
+$ sh setup_osx.sh
   > :NeoBundleInstall
 ```
 
@@ -14,6 +15,7 @@ $ sh setup.sh
 
 ```
 $ git clone this repository
+$ cd dotfiles
 $ sh setup_linux.sh
   > :NeBundleInstall
 ```
