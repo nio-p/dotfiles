@@ -5,8 +5,6 @@
 ### OSX
 
 ```
-$ brew update
-$ brew install wget
 $ git clone this repository
 $ sh setup.sh
   > :NeoBundleInstall
@@ -16,6 +14,6 @@ $ sh setup.sh
 
 ```
 $ git clone this repository
-$ sh setup.sh
+$ sh setup_linux.sh
   > :NeBundleInstall
 ```
