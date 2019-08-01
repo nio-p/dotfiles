@@ -12,3 +12,13 @@ ZSH_THEME="avit"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+setopt no_beep
+
+alias gs='git status'
+alias gb='git branch'
+alias gf='git fetch'
+alias gfp='git fetch -p'
+alias gd='git diff'
+
+export LANG="ja_JP.UTF-8"
