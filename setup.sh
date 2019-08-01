@@ -1,6 +1,10 @@
 #!/bin/sh
+
 yum install -y zsh
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+chpass -s /bin/zsh
+mv ./.zshrc ~/.zshrc
+source ~/.zshrc
 
 DOT_FILES=".gitconfig .gitignore .vim .vimrc"
 
