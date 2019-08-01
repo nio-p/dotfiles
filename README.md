@@ -1,3 +1,5 @@
+# dotfiles
+
 ## Setup
 
 ### OSX
@@ -8,7 +10,6 @@ $ brew install wget
 $ git clone this repository
 $ sh setup.sh
   > :NeoBundleInstall
-$ chpass -s /bin/zsh
 ```
 
 ### Linux
@@ -16,6 +17,5 @@ $ chpass -s /bin/zsh
 ```
 $ git clone this repository
 $ sh setup.sh
-  > :NeoBundleInstall
-$ chpass -s /bin/zsh
+  > :NeBundleInstall
 ```
