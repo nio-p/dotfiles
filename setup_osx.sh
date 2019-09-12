@@ -24,8 +24,7 @@ mv ./.zshrc ~/.zshrc
 source ~/.zshrc
 
 DOT_FILES=".gitconfig .gitignore .vim .vimrc"
-
-for file in $DOT_FILES
+for file in ${DOT_FILES}
 do
   ln -s $HOME/dotfiles/$file $HOME
 done
