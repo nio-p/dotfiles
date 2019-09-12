@@ -10,6 +10,8 @@ brew install git
 brew install tig
 brew install ag
 
+brew install awscli
+
 brew install rbenv
 brew install ruby-build
 
