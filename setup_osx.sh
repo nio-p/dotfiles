@@ -11,6 +11,7 @@ brew install tig
 brew install ag
 
 brew install awscli
+brew install terraform
 
 brew install rbenv
 brew install ruby-build
