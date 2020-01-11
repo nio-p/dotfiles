@@ -18,8 +18,6 @@ if dein#load_state('~/.cache/dein')
   call dein#add('Shougo/neocomplcache')
   call dein#add('scrooloose/nerdtree')
   call dein#add('thinca/vim-quickrun')
-  call dein#add('petdance/vim-perl')
-  call dein#add('hotchpotch/perldoc-vim')
   call dein#add('tpope/vim-surround')
   call dein#add('elzr/vim-json')
 
