@@ -10,17 +10,21 @@ brew install git
 brew install tig
 brew install ag
 
+brew install awscli
+brew install terraform
+
 brew install rbenv
 brew install ruby-build
 
-brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package quicklookase qlvideo
+brew cask install qlcolorcode qlmarkdown quicklook-json quicklook-csv qlvideo
 
 wget --no-check-certificate http://install.ohmyz.sh -O - | sh
 chpass -s /bin/zsh
+mv ./.zshrc ~/.zshrc
+source ~/.zshrc
 
 DOT_FILES=".gitconfig .gitignore .vim .vimrc"
-
-for file in $DOT_FILES
+for file in ${DOT_FILES}
 do
   ln -s $HOME/dotfiles/$file $HOME
 done

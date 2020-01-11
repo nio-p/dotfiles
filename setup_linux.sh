@@ -1,3 +1,5 @@
+#!/bin/sh
+
 yum update -y
 
 yum install -y gcc
@@ -15,7 +17,6 @@ yum install -y zlib-devel
 yum install -y bzip2-devel
 yum install -y libcurl-devel
 
-
 # rbenv
 # ~/.rbenv, /usr/local/bin以下好きな場所に...
 git clone https://github.com/sstephenson/rbenv.git /usr/local/rbenv
@@ -24,3 +25,21 @@ echo 'export RBENV_ROOT="/usr/local/rbenv"' >> ~/.bash_profile
 echo 'PATH=$PATH:$RBENV_ROOT/bin' >> ~/.bash_profile
 echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
 source ~/.bash_profile
+
+yum install -y zsh
+wget --no-check-certificate http://install.ohmyz.sh -O - | sh
+chpass -s /bin/zsh
+mv ./.zshrc ~/.zshrc
+source ~/.zshrc
+
+DOT_FILES=".gitconfig .gitignore .vim .vimrc"
+
+for file in $DOT_FILES
+do
+  ln -s $HOME/dotfiles/$file $HOME
+done
+
+mkdir ~/.vim/bundle
+git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+git clone https://github.com/Shougo/vimproc ~/.vim/bundle/vimproc
+vim
