@@ -8,7 +8,7 @@
 $ git clone this repository
 $ cd dotfiles
 $ sh setup_osx.sh
-  > :NeoBundleInstall
+  > :call dein#install()
 ```
 
 ### Linux
@@ -17,5 +17,5 @@ $ sh setup_osx.sh
 $ git clone this repository
 $ cd dotfiles
 $ sh setup_linux.sh
-  > :NeBundleInstall
+  > :call dein#install()
 ```
