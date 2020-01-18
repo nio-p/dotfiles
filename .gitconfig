@@ -1,0 +1,13 @@
+[user]
+  name = nio-p
+  email = nio.p.co.jp@gmail.com
+[alias]
+  s = status
+  b = branch
+  c = checkout
+  d = diff
+  f = fetch
+[color]
+  ui = true
+[pager]
+  branch = false
