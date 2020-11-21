@@ -21,6 +21,7 @@ brew cask install google-chrome
 brew cask install google-japanese-ime
 brew cask install slack
 brew cask install docker
+brew cask install iterm2
 
 # dein
 curl https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
