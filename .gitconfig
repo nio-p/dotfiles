@@ -1,6 +1,6 @@
 [user]
   name = ponpon
-  email = example.com
+  email = ponpon@example.com
 [alias]
   s = status
   b = branch
