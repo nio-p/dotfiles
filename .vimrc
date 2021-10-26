@@ -5,3 +5,5 @@ source ~/dotfiles/.vimrc.indent
 source ~/dotfiles/.vimrc.nerdtree
 source ~/dotfiles/.vimrc.anyjump
 source ~/dotfiles/.vimrc.neocomplcache
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim

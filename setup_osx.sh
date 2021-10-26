@@ -31,6 +31,9 @@ do
   ln -s $HOME/dotfiles/$file $HOME
 done
 
+cd ~/.vim
+git clone https://github.com/ctrlpvim/ctrlp.vim.git bundle/ctrlp.vim
+
 vim
 
 # open vim and install dein
