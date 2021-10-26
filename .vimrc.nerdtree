@@ -4,4 +4,4 @@ autocmd vimenter * if !argc() | NERDTree | endif
 let NERDTreeShowHidden=1
 let NERDTreeIgnore=['\.swp$']
 
-nmap ,n :NERDTreeFind<CR>
+nmap <Leader>n :NERDTreeFind<CR>
