@@ -3,7 +3,7 @@
 # brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
-brew install wget git tig ag jq
+brew install wget git tig ripgrep jq
 brew install awscli
 brew install rbenv ruby-build
 

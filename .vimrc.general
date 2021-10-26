@@ -38,6 +38,8 @@ set visualbell t_vb=
 
 nmap <silent> <Esc><Esc> <C-[> :nohlsearch<CR>
 
+let mapleader = " "
+
 " インサートモードの時の処理
 inoremap <C-e> <END>
 inoremap <C-a> <HOME>
