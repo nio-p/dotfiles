@@ -2,3 +2,6 @@ autocmd vimenter * if !argc() | NERDTree | endif
 
 " show dotfile(e.g. .vimrc .gitconfig)
 let NERDTreeShowHidden=1
+let NERDTreeIgnore=['\.swp$']
+
+nmap ,n :NERDTreeFind<CR>

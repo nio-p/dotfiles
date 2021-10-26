@@ -1,24 +1,15 @@
 #!/bin/sh
 
-set -e
-
 # brew
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
-brew install wget
-brew install git
-brew install tig
-brew install ag
-brew install jq
+brew install wget git tig ag jq
 brew install awscli
-brew install terraform
-brew install rbenv
-brew install ruby-build
+brew install rbenv ruby-build
 
 # cask
 brew cask install qlcolorcode qlmarkdown quicklook-json quicklook-csv qlvideo
-brew cask install google-chrome
-brew cask install google-japanese-ime
+brew cask install google-chrome google-japanese-ime
 brew cask install slack
 brew cask install docker
 brew cask install iterm2
@@ -40,10 +31,10 @@ do
   ln -s $HOME/dotfiles/$file $HOME
 done
 
+cd ~/.vim
+git clone https://github.com/ctrlpvim/ctrlp.vim.git bundle/ctrlp.vim
+
 vim
 
 # open vim and install dein
 # :call dein#install()
-
-# install node
-# https://github.com/nio-p/memo/blob/master/node.md

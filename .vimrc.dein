@@ -18,6 +18,8 @@ if dein#load_state('~/.cache/dein')
   call dein#add('thinca/vim-quickrun')
   call dein#add('tpope/vim-surround')
   call dein#add('elzr/vim-json')
+  call dein#add('pechorin/any-jump.vim')
+  call dein#add('vim-airline/vim-airline')
 
   if !has('nvim')
     call dein#add('roxma/nvim-yarp')
